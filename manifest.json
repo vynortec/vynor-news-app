@@ -1,0 +1,24 @@
+
+{
+  "name": "VynorNew's Intelligence",
+  "short_name": "VynorNew's",
+  "description": "Alta performance em notícias de negócios e análise de impacto com IA.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://img.icons8.com/ios-filled/192/ffffff/circuit.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://img.icons8.com/ios-filled/512/ffffff/circuit.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

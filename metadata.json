@@ -1,0 +1,8 @@
+{
+  "name": "VynorNew's",
+  "description": "Inteligência corporativa mobile-first com análise de impacto por IA.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
