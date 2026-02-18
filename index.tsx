@@ -75,7 +75,10 @@ interface UserProfile { name: string; email: string; isLoggedIn: boolean; prefer
 type AppView = 'auth' | 'home' | 'alerts' | 'profile' | 'detail' | 'image-editor' | 'onboarding';
 
 // --- AI SERVICES ---
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_API_KEY
+});
+
 
 const fetchNewsFeed = async (interests: string[], offset: number = 0): Promise<NewsItem[]> => {
   const prompt = `Gere 5 notícias REAIS de negócios (últimas 48h) sobre: ${interests.join(', ')}. O campo 'impact' deve ser 'low', 'medium', 'high' ou 'critical'. JSON puro.`;
